@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://github.com/Nestor-B/template-curriculum/Curriculum.html" />
+    <meta property="og:type"               content="article" /> 
+    <meta property="og:title"              content="Curriculum | Editar tu curriculum" />
+    <meta property="og:description"        content="¿Necesitas un Curriculum minimalista de forma facil y sencilla? Edita aquí tu curriculum y descargalo convertido a PDF." />
+    <meta property="og:image"              content="https://github.com/Nestor-B/template-curriculum/Curriculum/Curriculum.png" />    
+    <title> Curriculum | Editar tu Curriculum </title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="content">
+            <input type="file" title="Change photo perfil" style="opacity: 0;cursor: pointer;position: absolute;z-index: 100;background-color: red;max-width: 280px;height: 198px;" onchange="ChangePhoto(this)">
+            <div class="side-left" contenteditable="true">
+                <div class="block-top container-img-perfil">
+                    <div class="reflejo-imagen"></div>
+                    <img src="./Untitled.png" id="imgPerfil" alt="perfil">
+                </div>
+                <div class="block-center">
+                    <div class="separador"></div>
+                    <div class="info-personal">
+                        <h3 contenteditable="false">Contact</h3>
+                        <br>
+                        <p style="padding: 5px 0;">
+                            <b contenteditable="false">Tel </b> 
+                            <div>000-000-0000</div> 
+                        </p>
+                        <p style="padding: 5px 0;">
+                            <b contenteditable="false">Email </b> 
+                            <div>Correo-07@hotmail.com</div> </p>
+                        <p style="padding: 5px 0;">
+                            <b contenteditable="false">Page </b> 
+                            <div>https://github.com/Nestor-B/</div> 
+                        </p>
+                        <p style="padding: 5px 0;">
+                            <b contenteditable="false">Location </b> 
+                            <div>123 Avenida Romulo Betancour, Santo Domningo.</div> 
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <h3 contenteditable="false">Skills</h3>
+                        <br>
+                        <ul>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-bottom"></div>
+            </div>
+            <div class="side-right" contenteditable="true">
+                <h1>
+                    <span>Nombre</span> 
+                    <!-- <br> -->
+                    <span style="color: rgb(15, 108, 202);">Apellido</span> 
+                </h1>
+
+                <div>
+                    <h2>Developer</h2>
+                    <p style="margin: 1.5em 0 !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos itaque, est nam magnam maxime ipsam ut dignissimos voluptatem in impedit. Fuga quaerat nulla voluptas quam praesentium quod eaque nihil atque.</p>
+                </div>
+
+                <h2 contenteditable="false" style="color: rgb(15, 108, 202);">Experience</h2>
+                <div>
+                    <h3>Senior Web Developer</h3>
+                    <br>
+                    <p>Job company name | 2020</p>
+                    <ul>
+                        <li>Front end React js</li>
+                        <li>MongoDB</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Junior Web Developer</h3>
+                    <br>
+                    <p>Job company name | 2017</p>
+                    <ul>
+                        <li>Vue js</li>
+                        <li>Adminer Firebase</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Suport Tecnic</h3>
+                    <br>
+                    <p>Job company name | 2013</p>
+                    <ul>
+                        <li>Control network</li>
+                        <li>Mantenimiento PC</li>
+                    </ul>
+                </div>
+
+                <h2 contenteditable="false" style="color: rgb(15, 108, 202);">Education</h2>
+                <div>
+                    <h3>Computer engineer</h3>
+                    <br>
+                    <p>Universidad privada en Santo Domingo | 2017 - 2022</p>
+                </div>
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function ChangePhoto(e){
+            let file = e.files[0]
+            let RF = new FileReader()
+            RF.onload = function(e) {
+                document.querySelector('#imgPerfil').src = e.target.result
+            }
+            RF.readAsDataURL(file)
+        }
+    </script>
+    
+
+</body>
+</html>
