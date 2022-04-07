@@ -9,7 +9,7 @@ https://nestor-b.github.io/template-curriculum/Curriculum/
   - Imprimir
   - Más ajustes
   - Tamaño de papel: [ B5, Carta ], Según el contenido
-  - Scala: 80%, según el contenido
+  - Scala: 80%, Según el contenido
   - Seleccionar: Imprimir fondo de pantalla
 
 ### Ejemplo
