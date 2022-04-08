@@ -15,6 +15,7 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
     background: url(../img/fondo.png);
+    background-attachment: fixed;
     background-size: 130% 130%;
 }
 
