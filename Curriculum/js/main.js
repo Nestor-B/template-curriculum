@@ -24,7 +24,7 @@ function ChangePhoto(e){
 }
 //insertAdjacentHTML("beforebegin",
 function addExperience(){
-    contentExperience.innerHTML += `
+    contentExperience..insertAdjacentHTML("beforeend", `
         <div>
             <h3>New Title</h3>
             <br>
@@ -33,17 +33,17 @@ function addExperience(){
                 <li>Job</li>
             </ul>
         </div>            
-    `
+    `)
 }
 
 function addEducation(){
     let contentEducation = document.querySelector('#contentEducation')
-    contentEducation.innerHTML += `
+    contentEducation..insertAdjacentHTML("beforeend", `
     <br>
     <div>
         <h3>Computer engineer</h3>
         <br>
         <p>Universidad privada en Santo Domingo | 2017 - 2022</p>
         </div>            
-    `
+    `)
 }
