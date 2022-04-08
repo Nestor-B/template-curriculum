@@ -45,5 +45,5 @@ function addEducation(){
         <br>
         <p>Universidad privada en Santo Domingo | 2017 - 2022</p>
         </div>            
-    `)
+    `
 }
