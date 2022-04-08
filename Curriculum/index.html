@@ -65,44 +65,57 @@
                     <p style="margin: 1.5em 0 !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos itaque, est nam magnam maxime ipsam ut dignissimos voluptatem in impedit. Fuga quaerat nulla voluptas quam praesentium quod eaque nihil atque.</p>
                 </div>
 
-                <h2 contenteditable="false" style="color: rgb(15, 108, 202);">Experience</h2>
-                <div>
-                    <h3>Senior Web Developer</h3>
-                    <br>
-                    <p>Job company name | 2020</p>
-                    <ul>
-                        <li>Front end React js</li>
-                        <li>MongoDB</li>
-                        <li>AWS</li>
-                    </ul>
+                <div style="display: flex;justify-content: space-between;">
+                    <h2 contenteditable="false" style="color: rgb(15, 108, 202);">Experience</h2> 
+                    <button title="Add Experience" onclick="addExperience()" style="border: 0;background-color: transparent;font-size: 25px;color: gray;cursor: pointer;">+</button>
                 </div>
 
-                <div>
-                    <h3>Junior Web Developer</h3>
-                    <br>
-                    <p>Job company name | 2017</p>
-                    <ul>
-                        <li>Vue js</li>
-                        <li>Adminer Firebase</li>
-                    </ul>
+                <div id="contentExperience">
+                    <div>
+                        <h3>Senior Web Developer</h3>
+                        <br>
+                        <p>Job company name | 2020</p>
+                        <ul>
+                            <li>Front end React js</li>
+                            <li>MongoDB</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h3>Junior Web Developer</h3>
+                        <br>
+                        <p>Job company name | 2017</p>
+                        <ul>
+                            <li>Vue js</li>
+                            <li>Adminer Firebase</li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h3>Suport Tecnic</h3>
+                        <br>
+                        <p>Job company name | 2013</p>
+                        <ul>
+                            <li>Control network</li>
+                            <li>Mantenimiento PC</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Suport Tecnic</h3>
-                    <br>
-                    <p>Job company name | 2013</p>
-                    <ul>
-                        <li>Control network</li>
-                        <li>Mantenimiento PC</li>
-                    </ul>
+                <div style="display: flex;justify-content: space-between;">
+                    <h2 contenteditable="false" style="color: rgb(15, 108, 202);">Education</h2> 
+                    <button title="Add Education" onclick="addEducation()" style="border: 0;background-color: transparent;font-size: 25px;color: gray;cursor: pointer;">+</button>
                 </div>
 
-                <h2 contenteditable="false" style="color: rgb(15, 108, 202);">Education</h2>
-                <div>
-                    <h3>Computer engineer</h3>
-                    <br>
-                    <p>Universidad privada en Santo Domingo | 2017 - 2022</p>
+                <div id="contentEducation">
+                    <div>
+                        <h3>Computer engineer</h3>
+                        <br>
+                        <p>Universidad privada en Santo Domingo | 2017 - 2022</p>
+                    </div>
                 </div>
+
                 <br>
                 <br>
 
@@ -110,16 +123,7 @@
         </div>
     </div>
 
-    <script>
-        function ChangePhoto(e){
-            let file = e.files[0]
-            let RF = new FileReader()
-            RF.onload = function(e) {
-                document.querySelector('#imgPerfil').src = e.target.result
-            }
-            RF.readAsDataURL(file)
-        }
-    </script>
+    <script src="./js/main.js"></script>
     
 
 </body>
