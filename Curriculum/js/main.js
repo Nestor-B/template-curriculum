@@ -22,9 +22,9 @@ function ChangePhoto(e){
     }
     RF.readAsDataURL(file)
 }
-
+//insertAdjacentHTML("beforebegin",
 function addExperience(){
-    contentExperience.insertAdjacentHTML("beforebegin", `
+    contentExperience.innerHTML += `
         <div>
             <h3>New Title</h3>
             <br>
@@ -33,12 +33,12 @@ function addExperience(){
                 <li>Job</li>
             </ul>
         </div>            
-    `)
+    `
 }
 
 function addEducation(){
     let contentEducation = document.querySelector('#contentEducation')
-    contentEducation.insertAdjacentHTML("afterend", `
+    contentEducation.innerHTML += `
     <br>
     <div>
         <h3>Computer engineer</h3>
