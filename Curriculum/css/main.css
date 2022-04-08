@@ -139,4 +139,7 @@ h2 ~ div {
         grid-template-columns: 1fr;
         grid-template-rows: 42%;
     }
+    .container .content .side-left .block-bottom {
+        height: 20px;
+    }
 }
